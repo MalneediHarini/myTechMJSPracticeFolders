@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        //ex 1: JS Object
+        var myObj = {
+          name: "Harini",
+          age: 22,
+          place: "India",
+        };
+  
+        //with stringify()
+        var myjson = JSON.stringify(myObj);
+        console.log("the datatype is : ", typeof myjson); //string
+        console.log(myjson);
+        document.write(myjson);
+  
+        //with parse() method
+        var parsi = JSON.parse(myjson);
+        console.log("the datatype after the parse", typeof parsi); //object
+        console.log(parsi);
+  
+        //ex 2
+        //   const myObj = {
+        //   name: 'Hari',
+        //   age: 4,
+        //   favoriteFood: 'Biryani'
+        // };
+  
+        // const myObjStr = JSON.stringify(myObj);
+  
+        // console.log(myObjStr);
+        // // "{"name":"Hari","age":4,"favoriteFood":"Biryani"}"
+  
+        // console.log(JSON.parse(myObjStr));
+        // // Object {name:"Hari",age:4,favoriteFood:"Biryani"}
+      </script>
+</body>
+</html>
